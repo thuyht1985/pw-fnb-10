@@ -1,0 +1,10 @@
+1.
+- git init: Tạo thư mục .git trong thư mục hiện tại, biến nó thành một Git repository. Khởi tạo các vùng: Working Directory, Staging Area và Local Repository.
+- git add <tên_file>: thêm file vào vùng staging
+- git add .: Di chuyển tất cả thay đổi trong Working Directory vào Staging Area. Bao gồm file mới, file đã sửa đổi.
+- git commit -m"<message>": tạo 1 commit mới nội dung <message>
+
+2.
+- working directory: file2, file3
+- staging: rỗng
+- repository: file1
