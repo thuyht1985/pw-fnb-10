@@ -1,10 +1,38 @@
-1.
+1. Giải thích các câu lệnh:
 - git init: Tạo thư mục .git trong thư mục hiện tại, biến nó thành một Git repository. Khởi tạo các vùng: Working Directory, Staging Area và Local Repository.
 - git add <tên_file>: thêm file vào vùng staging
 - git add .: Di chuyển tất cả thay đổi trong Working Directory vào Staging Area. Bao gồm file mới, file đã sửa đổi.
 - git commit -m"<message>": tạo 1 commit mới nội dung <message>
 
 2.
-- working directory: file2, file3
-- staging: rỗng
-- repository: file1
+
+a. Tạo 3 file: file1, file2, file3
+- Vùng local: file1, file2, file3
+- Vùng working: rỗng
+- Vùng staging: rỗng
+- Vùng reposiroty: rỗng
+
+b. Chạy lệnh: git init
+- Vùng working: file1, file2, file3
+- Vùng staging: rỗng
+- Vùng reposiroty: rỗng
+
+c. Chạy lệnh: git commit -m"init project"
+- Vùng working: file1, file2, file3
+- Vùng staging: rỗng
+- Vùng reposiroty: rỗng
+
+d. Chạy lệnh: git add file1
+- Vùng working: file2, file3
+- Vùng staging: file1
+- Vùng reposiroty: rỗng
+
+e.  Chạy lệnh: git commit -m"add file1"
+- Vùng working: file2, file3
+- Vùng staging: file1
+- Vùng reposiroty: rỗng
+
+f. Chạy lệnh: git add file
+- Vùng working: rỗng
+- Vùng staging: file2, file3
+- Vùng reposiroty: file1
